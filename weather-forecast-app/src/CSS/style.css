@@ -1,0 +1,182 @@
+.main {
+  margin-top: 1rem;
+}
+.weather-panel {
+  background-image: url("https://unsplash.it/600/400?image=1043&blur");
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 25px 25px 40px 0px rgba(0,0,0,0.33);
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  
+  small {
+    color: inherit;
+    font-size: 50%;
+  }
+  ul.forecast > li {
+    border-top: 1px solid #fff;
+   
+  }
+
+  /* ul.forecast1 > li {
+    border-top: 1px solid #fff;
+  } */
+  .temperature {
+    & > span {
+        font-size: 2em;
+    }
+  }
+}
+
+#topCol{
+  display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.list-inline {
+  display: flex;
+  justify-content: space-around
+ 
+}
+@media (max-width: 600px) {
+  .list-inline {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+  }
+}
+
+#current_Temp{
+  font-size: 100px;
+}
+#max-min{
+  font-size : 20px
+}
+#current-Date{
+  font-size: 20px;
+  font-weight: 500;
+ 
+}
+#weather-type{
+
+}
+
+#temperature{
+  display: grid;
+    justify-items: center;
+}
+
+li {list-style-type: none;}
+
+#forcastCol{
+      display: grid;
+      justify-items: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.searchTerm {
+  width: max-content;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 55px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.button-6 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+#toggleBtn{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#weatherCard{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+}
